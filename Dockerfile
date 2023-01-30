@@ -72,3 +72,15 @@ RUN cd /tmp && \
     ./bootstrap.sh --prefix=/usr/local && \
     ./b2 install && \
     rm -rf /tmp/*
+
+
+#RUN apt-get -y update && apt-get -y install libgtest-dev && cd /usr/src/gtest && cmake CMakeLists.txt && make
+
+
+RUN wget https://github.com/google/googletest/archive/release-1.8.0.tar.gz && tar xf release-1.8.0.tar.gz && cd googletest-release-1.8.0 && cmake CMakeLists.txt && make
+
+
+
+
+
+
